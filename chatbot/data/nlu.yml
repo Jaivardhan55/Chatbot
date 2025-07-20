@@ -1,0 +1,182 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi there
+    - hi there buddy
+    - hi there friend
+    - hi there mate
+    - hi there pal
+    - hi there bro
+    - hi there sis
+    - hi there dude
+    - hi buddy
+    - hi friend
+    - hi mate
+    - hi pal
+    - hi bro
+    - hi sis
+    - hi dude 
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see you soon
+    - see you next time
+    - catch you later
+    - talk to you later
+    - talk to you soon
+    - talk to you next time
+    - catch you next time
+    - catch you soon
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - absolutely
+    - definitely
+    - I think so
+    - I like that
+    - I want that
+    - I want to do that
+    - I like that idea
+    - I am interested
+    - I am interested in that
+    - I am interested in that idea
+    - we can do that
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - not at all
+    - not sure
+    - not interested
+    - I don't like that
+    - I don't want that
+    - I don't want to do that
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I am feeling great
+    - I am feeling very well
+    - I am feeling good
+    - I am feeling very great
+    - I am feeling awesome
+    - I am feeling extremely good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - I am not happy
+    - I am not feeling well
+    - I am not feeling good
+    - I am not feeling very well
+    - I am not feeling great
+    - iam so sad
+    - I am not happy at all
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a robot?
+    - are you a machine?
+    - are you a real person?
+    - are you a real human?
+    
+
+- intent: tell_time
+  examples: |
+    - what time is it?
+    - can you tell me the time?
+    - current time?
+    - do you know the time?
+    - time please
+    - what is the time?
+    - can you tell me what time it is?
+    - can you tell me the current time?
+    - time
+    - time?
+    - time please?
+    - can you check the time for me?
+    - can you tell me the time right now?
+    - time now
+    - check the time
+    - show me the time
+    - I want to know the time
+    - do you have the time
+    - could you check the clock
+    - I need the time
+    - do you know what time it is
+    - what is the time right now
+
+- regex: time_pattern
+  examples: |
+    - time
+    - time?
+    - current time
+    - what time is it

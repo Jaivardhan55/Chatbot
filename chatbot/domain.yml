@@ -9,10 +9,27 @@ intents:
   - mood_unhappy
   - bot_challenge
   - tell_time
+  - appreciation
+  - mood_happy
+  - mood_sad
+  - do_math
+  - get_weather
+
+entities:
+  - location
 
 responses:
+
+  utter_default:
+  - text: "I'm sorry, I didn't quite get that. Could you rephrase?"
+  - text: "Hmm, I'm not sure I understand. Want to try that another way?"
+  - text: "Can you say that again differently?"
+
   utter_greet:
   - text: "Hey! How are you?"
+  - text: "Hello! How can I help you today?"
+  - text: "Hi there! What can I do for you?"
+  - text: "Hey! Need anything?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -21,8 +38,11 @@ responses:
   utter_did_that_help:
   - text: "Did that help you?"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_mood_happy:
+  - text: "That's great to hear! 😊"
+
+  utter_mood_sad:
+  - text: "I'm really sorry you're feeling this way. I'm here for you."
 
   utter_goodbye:
   - text: "Bye"
@@ -33,8 +53,37 @@ responses:
   utter_tell_time:
   - text: "Let me check the time for you..."
 
+  utter_appreciation:
+  - text: "Thank you! I'm here to help. 😊"
+  - text: "Glad I could help!"
+  - text: "You're welcome!"
+
+  utter_ask_location:
+  - text: "Which city do you want the weather for?"
+
+slots:
+  location:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: location
+
 actions:
   - action_tell_time
+  - utter_greet
+  - utter_default
+  - utter_mood_happy
+  - utter_mood_sad
+  - utter_iamabot
+  - utter_goodbye
+  - utter_appreciation
+  - utter_tell_time
+  - action_do_math
+  - action_get_weather
+
+
+
 
 session_config:
   session_expiration_time: 60

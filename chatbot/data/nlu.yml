@@ -31,6 +31,16 @@ nlu:
     - hi bro
     - hi sis
     - hi dude 
+    - yo
+- intent: nlu_fallback
+  examples: |
+    - asdlfkj
+    - lkajsdflkj
+    - what is the meaning of life?
+    - please don't do this to me
+    - random text here
+    - lkajj;fasdf
+
 
 - intent: goodbye
   examples: |
@@ -90,7 +100,7 @@ nlu:
     - I don't want that
     - I don't want to do that
 
-- intent: mood_great
+- intent: mood_happy
   examples: |
     - perfect
     - great
@@ -113,7 +123,7 @@ nlu:
     - I am feeling awesome
     - I am feeling extremely good
 
-- intent: mood_unhappy
+- intent: mood_sad
   examples: |
     - my day was horrible
     - I am sad
@@ -180,3 +190,70 @@ nlu:
     - time?
     - current time
     - what time is it
+  
+- intent: do_math
+  examples: |
+    - What is 5 plus 7?
+    - Calculate 10 minus 3
+    - Multiply 4 and 5
+    - Whats 6 divided by 2?
+    - Add 15 and 25
+    - 9 + 8
+    - 12 * 3
+    - 100 / 5
+
+- intent: appreciation
+  examples: |
+    - good job
+    - well done
+    - nice work
+    - you're awesome
+    - great job
+    - that was helpful
+    - thanks buddy
+    - good going
+    - thanks for your help
+    - good
+    - thanks a lot
+    - thank you
+    - thanks
+    - thanks for your assistance
+    - I appreciate your help
+    - I appreciate your assistance
+    - I appreciate your support
+    - I appreciate your effort
+    - I appreciate your work
+    - I appreciate your time
+    - I appreciate your response
+    - I appreciate your input
+    - I appreciate your feedback
+    - You've done a great job
+  
+- intent: get_weather
+  examples: |
+    - what's the weather in [Delhi](location)?
+    - tell me the weather in [Mumbai](location)
+    - is it raining in [Hyderabad](location)?
+    - how hot is it in [Chennai](location)?
+    - weather at [Bangalore](location)
+    - what's the temperature in [Kolkata](location)?
+    - is it cold in [Pune](location)?
+    - how's the weather in [Jaipur](location)?
+    - weather forecast for [Ahmedabad](location)
+    - will it be sunny in [Lucknow](location)?
+    - what's the weather like in [Chandigarh](location)?
+    - Delhi
+    - Mumbai
+    - Hyderabad
+    - Chennai
+    - Bangalore
+    - Kolkata
+    - Pune
+    - Jaipur
+    - [Mumbai](location)
+    - [Hyderabad](location)
+    - [Chennai](location)
+    - [Bangalore](location)
+    - [Kolkata](location)
+    - [Pune](location)
+    - [Jaipur](location)

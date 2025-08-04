@@ -6,11 +6,11 @@ This is a simple AI chatbot built using the Rasa framework. It can respond to gr
 - Greeting & farewell handling
 - Tells current time using custom actions
 - Intent classification & entity extraction (NLU)
+- Arithmetic operation handling
+- Weather forecasting (API)
 - Modular and scalable design
 
 ## Upcoming Features
-- Arithmetic operation handling
-- Weather forecasting (API)
 - User memory for name recall
 
 ## Tech Stack

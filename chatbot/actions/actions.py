@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 
 load_dotenv()  
 
-# ------------------ Utility Functions ------------------
+
 
 def extract_numbers(text: str) -> List[float]:
     return list(map(float, re.findall(r"[-+]?\d*\.\d+|\d+", text)))
@@ -57,7 +57,6 @@ def get_weather_data(city: str) -> Optional[Dict[str, Any]]:
         print(f"Weather API error: {e}")
     return None
 
-# ------------------ Action Classes ------------------
 
 class ActionTellTime(Action):
     def name(self) -> str:

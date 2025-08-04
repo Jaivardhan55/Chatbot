@@ -16,13 +16,16 @@ pipeline:
 - name: ResponseSelector
   epochs: 100
 - name: FallbackClassifier
-  threshold: 0.3
+  threshold: 0.7          # Raise threshold to 70%
   ambiguity_threshold: 0.1
 
 policies:
-- name: MemoizationPolicy
 - name: RulePolicy
+  core_fallback_threshold: 0.7    # Raise threshold here too
+  core_fallback_action_name: "action_default_fallback"
+  enable_fallback_prediction: true
+- name: MemoizationPolicy
 - name: TEDPolicy
   max_history: 5
   epochs: 100
-assistant_id: 20250720-160650-creative-knot
+assistant_id: 20250803-072225-short-retreat

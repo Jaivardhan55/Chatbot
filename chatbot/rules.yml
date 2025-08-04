@@ -2,6 +2,21 @@ version: "3.1"
 
 rules:
 
+- rule: Respond to greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle fallback
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Respond to happy mood
+  steps:
+  - intent: mood_happy
+  - action: utter_mood_happy
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye
@@ -15,4 +30,20 @@ rules:
 - rule: respond to tell_time intent
   steps:
   - intent: tell_time
+  - action: utter_tell_time
   - action: action_tell_time
+
+- rule: Respond to appreciation
+  steps:
+  - intent: appreciation
+  - action: utter_appreciation
+
+- rule: Respond to math query
+  steps:
+  - intent: do_math
+  - action: action_do_math
+
+- rule: Get weather
+  steps:
+  - intent: get_weather
+  - action: action_get_weather
